@@ -7,6 +7,7 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: "column",
     justifyContent: "center",
     alignItems: "center",
+    zIndex: 200,
   },
   about_root: {
     marginTop: 100,
@@ -15,7 +16,9 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
     alignItems: "center",
   },
-
+  buy_intermoon_button_container: {
+    paddingTop: 100,
+  },
   title_container: {
     display: "flex",
     flexDirection: "column",

@@ -11,18 +11,20 @@ function IndexPage() {
       <Typography className={classes.go_to_moon_text}>
         HAVE YOU EVER WANTED TO GO TO THE MOON?
       </Typography>
-      <Button
-        variant="contained"
-        color="primary"
-        className={classes.button}
-        onClick={() => {
-          window.open(
-            "https://exchange.pancakeswap.finance/#/swap?outputCurrency=0x7DA85C84b8191A977750382f1B8f4de13dD79E3f"
-          );
-        }}
-      >
-        Buy INTERMOON
-      </Button>
+      <div className={classes.buy_intermoon_button_container}>
+        <Button
+          variant="contained"
+          color="primary"
+          className={classes.button}
+          onClick={() => {
+            window.open(
+              "https://exchange.pancakeswap.finance/#/swap?outputCurrency=0x7DA85C84b8191A977750382f1B8f4de13dD79E3f"
+            );
+          }}
+        >
+          Buy INTERMOON
+        </Button>
+      </div>
 
       <IntermoonAbout />
       <RoadMap />

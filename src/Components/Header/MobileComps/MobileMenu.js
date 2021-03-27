@@ -22,6 +22,10 @@ function MobileMenu() {
   const handleOpen = () => {
     open ? setOpen(false) : setOpen(true);
   };
+  const handleClick = (link) => {
+    window.open(link);
+    handleOpen();
+  };
   return (
     <div style={{ float: "right" }}>
       <IconButton
@@ -36,7 +40,7 @@ function MobileMenu() {
           <List className={classes.menu_mobile}>
             <ListItem
               button
-              onClick={() => window.open("https://twitter.com/intermoontoken")}
+              onClick={() => handleClick("https://twitter.com/intermoontoken")}
             >
               <ListItemIcon>
                 <TwitterIcon className={classes.mobile_menu_social_icons} />
@@ -48,7 +52,7 @@ function MobileMenu() {
             </ListItem>
             <ListItem
               button
-              onClick={() => window.open("https://www.reddit.com/r/INTERMOON/")}
+              onClick={() => handleClick("https://www.reddit.com/r/INTERMOON/")}
             >
               <ListItemIcon>
                 <RedditIcon className={classes.mobile_menu_social_icons} />
@@ -60,7 +64,7 @@ function MobileMenu() {
             </ListItem>
             <ListItem
               button
-              onClick={() => window.open("https://t.me/intermoontoken")}
+              onClick={() => handleClick("https://t.me/intermoontoken")}
             >
               <ListItemIcon>
                 <TelegramIcon className={classes.mobile_menu_social_icons} />
@@ -73,7 +77,7 @@ function MobileMenu() {
             <ListItem
               button
               onClick={() =>
-                window.open("https://discord.com/invite/bskmPkYzyn")
+                handleClick("https://discord.com/invite/bskmPkYzyn")
               }
             >
               <ListItemIcon>

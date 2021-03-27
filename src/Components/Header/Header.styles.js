@@ -4,6 +4,7 @@ import { makeStyles } from "@material-ui/core/styles";
 const useStyles = makeStyles((theme) => ({
   root: {
     background: "radial-gradient(ellipse at bottom, #0D1E31, #111)",
+
     display: "flex",
     flexDirection: "row",
     justifyContent: "flex-start",
